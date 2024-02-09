@@ -44,6 +44,8 @@ function create ()
 
 player.setBounce(0.2);
 player.setCollideWorldBounds(true);
+player.body.setGravityY(300)
+this.physics.add.collider(player, platforms);
 
 this.anims.create({
     key: 'left',
